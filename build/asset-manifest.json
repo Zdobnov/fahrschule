@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3d8a0eec.chunk.css",
+    "main.js": "/static/js/main.1639eddc.chunk.js",
+    "main.js.map": "/static/js/main.1639eddc.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.a5e7cf3d.js",
+    "runtime-main.js.map": "/static/js/runtime-main.a5e7cf3d.js.map",
+    "static/js/2.1cdca199.chunk.js": "/static/js/2.1cdca199.chunk.js",
+    "static/js/2.1cdca199.chunk.js.map": "/static/js/2.1cdca199.chunk.js.map",
+    "static/js/3.9ed739fb.chunk.js": "/static/js/3.9ed739fb.chunk.js",
+    "static/js/3.9ed739fb.chunk.js.map": "/static/js/3.9ed739fb.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.3d8a0eec.chunk.css.map": "/static/css/main.3d8a0eec.chunk.css.map",
+    "static/js/2.1cdca199.chunk.js.LICENSE.txt": "/static/js/2.1cdca199.chunk.js.LICENSE.txt",
+    "static/media/call.d8d8955d.svg": "/static/media/call.d8d8955d.svg",
+    "static/media/flag-de.fd6707b5.svg": "/static/media/flag-de.fd6707b5.svg",
+    "static/media/flag-ru.eedf1b74.svg": "/static/media/flag-ru.eedf1b74.svg",
+    "static/media/flag-uk.97bfdb14.svg": "/static/media/flag-uk.97bfdb14.svg",
+    "static/media/logo.65f8b4a3.png": "/static/media/logo.65f8b4a3.png",
+    "static/media/place.9f7c21c3.svg": "/static/media/place.9f7c21c3.svg",
+    "static/media/promo.bc7a7303.webp": "/static/media/promo.bc7a7303.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a5e7cf3d.js",
+    "static/js/2.1cdca199.chunk.js",
+    "static/css/main.3d8a0eec.chunk.css",
+    "static/js/main.1639eddc.chunk.js"
+  ]
+}
