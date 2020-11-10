@@ -98,7 +98,6 @@ body {
   height: 60px;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid red;
 }
 
 .nav-bar ul {
@@ -125,4 +124,66 @@ body {
   display: inline-block;
   margin-right: 12px;
   cursor: pointer;
+}
+
+.promo {
+  height: 500px;
+  width: 100%;
+  background-position: center -250px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #000000;
+}
+
+.promo .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.promo__content {
+  width: 40%;
+  padding-top: 80px;
+}
+
+.promo h1,
+.promo h2 {
+  color: #ffffff;
+}
+
+.promo h1 {
+  font-size: 48px;
+  font-weight: 100;
+}
+
+.promo__titles {
+  position: relative;
+  padding: 0 0 16px 28px;
+}
+
+.promo__titles:before,
+.promo li:before {
+  content: "";
+  background: var(--primary-color);
+  height: 100%;
+  width: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.promo ol {
+  margin-top: 40px;
+}
+
+.promo li {
+  padding-left: 24px;
+  position: relative;
+  color: #ababab;
+  line-height: 28px;
+}
+
+.promo li:before {
+  height: 1px;
+  top: 50%;
 }

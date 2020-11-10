@@ -1,3 +1,5 @@
+import React from 'react';
+
 import logo from '../images/logo.png';
 import iconCall from '../images/icons/call.svg';
 import iconPlace from '../images/icons/place.svg';
