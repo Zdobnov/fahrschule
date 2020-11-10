@@ -1,12 +1,14 @@
-import React, { Fragment } from 'react';
+import { StateProvider } from '../context/LanguageContext';
 
 import Header from './Header';
+import Nav from './Nav';
 
 function App() {
   return (
-    <Fragment>
+    <StateProvider>
       <Header>123</Header>
-    </Fragment>
+      <Nav>123</Nav>
+    </StateProvider>
   );
 }
 

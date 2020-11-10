@@ -1,5 +1,5 @@
 const DE = {
-  'header.menu.link.contact': 'Kontakt'
+  'test': 'Verknüpfung',
 };
 
 export default DE;

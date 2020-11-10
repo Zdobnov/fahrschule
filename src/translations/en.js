@@ -1,5 +1,5 @@
 const EN = {
-  'header.menu.link.contact': 'Contact'
+  'test': 'Link',
 };
 
 export default EN;
