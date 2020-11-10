@@ -1,5 +1,18 @@
-body {
+:root {
+  --primary-color: #e02b20;
+  --primary-text-color: #454545;
+}
+
+* {
   margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-style: normal;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +20,74 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.wrapper {
+  width: 100%;
+  max-width: 1408px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.header {
+  height: 115px;
+}
+
+.header__wrapper {
+  border-bottom: 1px solid #cccccc;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__phone,
+.header__address {
+  display: flex;
+  align-items: center;
+}
+
+.header__phone img,
+.header__address img {
+  display: block;
+  height: 32px;
+  flex: 0 0 32px;
+  margin-right: 16px;
+}
+
+.header__phone a,
+.header__address a {
+  font-weight: bold;
+  color: var(--primary-text-color);
+  position: relative;
+  top: 0;
+  transition: color .4s ease;
+}
+
+.header__phone a:hover,
+.header__address a:hover {
+  color: var(--primary-color);
+}
+
+.header__phone a:after,
+.header__address a:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 1px;
+  width: 0;
+  left: 0;
+  background: transparent;
+  transition: width .4s ease;
+}
+
+.header__phone a:hover:after,
+.header__address a:hover:after {
+  width: 100%;
+  background-color: var(--primary-color);
+}
+
+.header__address {
+  margin-right: 48px;
 }
