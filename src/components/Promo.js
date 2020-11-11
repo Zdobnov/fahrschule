@@ -21,6 +21,9 @@ const Promo = () => {
             <Translate type="li">promo.list.item.5</Translate>
             <Translate type="li">promo.list.item.6</Translate>
           </ol>
+          <a href="tel:+49302942923" className="button">
+            Rufen uns
+          </a>
         </div>
       </div>
     </div>
