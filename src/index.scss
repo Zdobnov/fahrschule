@@ -1,7 +1,8 @@
 :root {
-  --primary-color: #e02b20;
-  --primary-text-color: #454545;
-  --secondary-text-color: #ababab;
+  --color-primary: #e02b20;
+  --color-secondary: #efefef;
+  --color-primary-text: #454545;
+  --color-secondary-text: #ababab;
 
   --color-white: #ffffff;
 }
@@ -13,7 +14,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-style: normal;
-  color: var(--primary-text-color);
+  color: var(--color-primary-text);
 }
 
 body {
@@ -45,7 +46,7 @@ ol {
 
     &:before {
       content: "";
-      background: var(--primary-color);
+      background: var(--color-primary);
       width: 8px;
       position: absolute;
       left: 0;
@@ -66,7 +67,7 @@ ol {
   color: var(--color-white);
   text-transform: uppercase;
   padding: 16px 32px;
-  background: var(--primary-color);
+  background: var(--color-primary);
   display: inline-block;
   position: relative;
   transition: background-color .4s ease;
@@ -108,7 +109,7 @@ ol {
 
     a {
       font-weight: bold;
-      color: var(--primary-text-color);
+      color: var(--color-primary-text);
       position: relative;
       top: 0;
       transition: color .4s ease;
@@ -125,11 +126,11 @@ ol {
       }
 
       &:hover {
-        color: var(--primary-color);
+        color: var(--color-primary);
 
         &:after {
           width: 100%;
-          background-color: var(--primary-color);
+          background-color: var(--color-primary);
         }
       }
     }
@@ -199,7 +200,7 @@ ol {
 
     &:before {
       content: "";
-      background: var(--primary-color);
+      background: var(--color-primary);
       height: 100%;
       width: 8px;
       position: absolute;
@@ -222,7 +223,7 @@ ol {
     margin: 40px 0;
 
     li {
-      color: var(--secondary-text-color);
+      color: var(--color-secondary-text);
     }
   }
 }
@@ -231,7 +232,7 @@ ol {
   padding: 80px 0;
 
   &--red {
-    background-color: var(--primary-color);
+    background-color: var(--color-primary);
 
     * {
       color: var(--color-white);
@@ -240,6 +241,10 @@ ol {
     .article:before {
       background: var(--color-white);
     }
+  }
+
+  &--gray {
+    background: var(--color-secondary);
   }
 
   &--double {
@@ -260,7 +265,7 @@ ol {
 
   &:before {
     content: "";
-    background-color: var(--primary-color);
+    background-color: var(--color-primary);
     height: 3px;
     width: 50px;
     position: absolute;
@@ -279,15 +284,25 @@ ol {
   }
 }
 
-.four-cards {
+.cards {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
 
-  & > * {
-    width: calc(25% - 16px);
-    background: var(--color-white);
-    box-shadow: 0 0 10px rgba(0,0,0,.25);
+  & ~ & {
+    margin-top: 20px;
+  }
+
+  &--four {
+    .card {
+      width: calc(25% - 15px);
+    }
+  }
+
+  &--three {
+    .card {
+      width: calc(33.33% - 13.33px);
+    }
   }
 }
 
@@ -296,6 +311,15 @@ ol {
   flex-direction: column;
   align-items: center;
   padding: 24px;
+  background: var(--color-white);
+  box-shadow: 0 0 10px rgba(0,0,0,.25);
+
+  &__additional-info {
+    margin-top: auto;
+    font-size: 32px;
+    position: relative;
+    color: var(--color-primary);
+  }
 
   p {
     text-align: center;
@@ -303,5 +327,9 @@ ol {
 
   h6 {
     font-weight: 400;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }

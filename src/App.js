@@ -41,7 +41,7 @@ function App() {
       <Section>
         <Article>
           <h3>Warum wir</h3>
-          <div className="four-cards">
+          <div className="cards cards--four">
             <div className="card">
               <img src={iconBook} alt="icon" className="icon" />
               <h6>Theoretischer Unterricht</h6>
@@ -61,6 +61,46 @@ function App() {
               <img src={iconChat} alt="icon" className="icon" />
               <h6>Sprachen</h6>
               <p>Wir bieten unsere Fahrausbildung im Moment in den Sprachen Deutsch, Englisch, Russisch und Türkisch an. Gerne kannst du auch direkt in einer dieser Sprachen anfragen.</p>
+            </div>
+          </div>
+        </Article>
+      </Section>
+      <Section className="section--prices section--gray">
+        <Article>
+          <h3>Unsere Preise</h3>
+          <p>Hier findest du unsere Preise für Theorie- und Praxisausbildung, sowie alle Pflicht- und Sonderfahrten.</p>
+          <div className="cards cards--three">
+            <div className="card">
+              <h6>Anmeldung</h6>
+              <p>Die Anmeldung beinhaltet die Registrierung in der Fahrschule und die Teilnahme an allen Theoriestunden.<br/>An den theoretischen Einheiten darfst du so oft teilnehmen, wie du es möchtest und gerne auch jede Einheit zwei Mal besuchen. Auch private Theoriestunden sind möglich.</p>
+              <div className="card__additional-info">€200</div>
+            </div>
+            <div className="card">
+              <h6>Fahrstunden</h6>
+              <p>Für eine reguläre Fahrstunde planen wir 80 Minuten ein. Gerne aber auch mehr oder weniger Zeit, angepasst an deine Bedürfnisse.</p>
+              <div className="card__additional-info">80 minuten €72</div>
+            </div>
+            <div className="card">
+              <h6>Überlandfahrt</h6>
+              <p>Die Überlandfahrt dauert 5 x 45 Min (225 Minuten). Dabei üben wir die Fahrt auf Landstraßen.</p>
+              <div className="card__additional-info">€225</div>
+            </div>
+          </div>
+          <div className="cards cards--three">
+            <div className="card">
+              <h6>Autobahnfahrt</h6>
+              <p>Die Autobahnfahrt dauert 4 x 45 Min (180 Minuten), zuzüglich 40 Minuten An-/Abfahrt.</p>
+              <div className="card__additional-info">€216</div>
+            </div>
+            <div className="card">
+              <h6>Nachtfahrt</h6>
+              <p>Nachtfahrten dauern 3 x 45 Min. (135 Minuten) und wir üben hier das Fahren und die Gegebenheiten bei Nacht und im Dunkeln.</p>
+              <div className="card__additional-info">€135</div>
+            </div>
+            <div className="card">
+              <h6>Vorstellung zur Praxisprüfung</h6>
+              <p>Für die Vorstellung für die Praxisprüfung erheben wir einen Betrag von 95€. Zusätzlich fällt eine 40-minütige Übungsfahrt an. Damit du dich noch einmal auf die Prüfung vorbereiten kannst.</p>
+              <div className="card__additional-info">€131</div>
             </div>
           </div>
         </Article>
