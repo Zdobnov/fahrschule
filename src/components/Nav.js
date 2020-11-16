@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import { store } from '../context/LanguageContext';
 
@@ -28,26 +29,31 @@ const Nav = () => {
   };
 
   return (
-    <div className="wrapper nav-bar">
-      <nav>
-        <span><Translate>test</Translate> 1</span>
-        <span><Translate>test</Translate> 2</span>
-        <span><Translate>test</Translate> 2</span>
-        <span><Translate>test</Translate> 3</span>
-        <span><Translate>test</Translate> 4</span>
-      </nav>
-      <ul>
-        {languages.map((language, index) => (
-          <li
-            key={index}
-            style={{
-              backgroundImage: `url(${language.iconSrc})`,
-              ...(globalState.state === language.name && { opacity: 1 }),
-            }}
-            onClick={handleLanguageClick(language.name)}
-          />
-        ))}
-      </ul>
+    <div className="sticky-bar">
+      <div className="nav-bar">
+        <div className="wrapper nav-bar__wrapper">
+          <nav className="nav-bar__navigation">
+            <NavLink exact to="/" className="nav-bar__link" activeClassName="nav-bar__link--active">
+              <Translate>navigation.main</Translate>
+            </NavLink>
+            <NavLink exact to="/about" className="nav-bar__link" activeClassName="nav-bar__link--active">
+              <Translate>navigation.about</Translate>
+            </NavLink>
+          </nav>
+          <ul>
+            {languages.map((language, index) => (
+              <li
+                key={index}
+                style={{
+                  backgroundImage: `url(${language.iconSrc})`,
+                  ...(globalState.state === language.name && { opacity: 1 }),
+                }}
+                onClick={handleLanguageClick(language.name)}
+              />
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
   )
 };

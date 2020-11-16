@@ -1,6 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
+// logo
 import logo from '../images/logo.png';
+
+// icons
 import iconCall from '../images/icons/call.svg';
 import iconPlace from '../images/icons/place.svg';
 
@@ -8,7 +12,7 @@ const Header = () => {
   return (
     <header className="header">
       <div className="wrapper header__wrapper">
-        <img className="header__logo" src={logo} alt="Logo" />
+        <Link to="/" className="header__logo" style={{ backgroundImage: `url(${ logo })` }} alt="Logo" />
         <address className="header__address">
           <img src={iconPlace} alt="icon" className="icon"/>
           <a href="https://www.google.com/maps/place/Neue+Bahnhofstra%C3%9Fe+5,+10245+Berlin/@52.5053287,13.4679337,17z/data=!3m1!4b1!4m5!3m4!1s0x47a84ef0dbcfa363:0x7714e55b01314e2c!8m2!3d52.505326!4d13.4697742" target="_blank" rel="noreferrer">

@@ -1,5 +1,6 @@
 const EN = {
-  'test': 'Link',
+  'navigation.main': 'Home',
+  'navigation.about': 'About us',
   'promo.title': '2Drive Driving School',
   'promo.subtitle': 'Your quick way to your driving licence',
   'promo.list.item.1': 'Competent, friendly driving instructors',

@@ -1,5 +1,6 @@
 const RU = {
-  'test': 'Ссылка',
+  'navigation.main': 'Главная',
+  'navigation.about': 'О нас',
   'promo.title': 'Автошкола 2Drive',
   'promo.subtitle': 'Ваш быстрый путь к водительскому удостоверению',
   'promo.list.item.1': 'Компетентные, дружелюбные инструкторы по вождению',

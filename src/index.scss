@@ -3,6 +3,7 @@
   --color-secondary: #efefef;
   --color-primary-text: #454545;
   --color-secondary-text: #ababab;
+  --color-separator: #cccccc;
 
   --color-white: #ffffff;
 }
@@ -66,11 +67,18 @@ ol {
 .button {
   color: var(--color-white);
   text-transform: uppercase;
-  padding: 16px 32px;
+  padding: 0 32px;
   background: var(--color-primary);
-  display: inline-block;
   position: relative;
   transition: background-color .4s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 16px;
 
   &:hover {
     background-color: #961c14;
@@ -87,7 +95,7 @@ ol {
   height: 115px;
 
   &__wrapper {
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid var(--color-separator);
     height: 100%;
     display: flex;
     align-items: center;
@@ -95,6 +103,8 @@ ol {
 
   &__logo {
     margin-right: auto;
+    width: 185px;
+    height: 64px;
   }
 
   &__phone,
@@ -142,10 +152,40 @@ ol {
 }
 
 .nav-bar {
-  display: flex;
-  height: 60px;
-  align-items: center;
-  justify-content: space-between;
+  &__wrapper {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__navigation {
+    display: flex;
+  }
+
+  &__link {
+    display: block;
+    margin-right: 20px;
+    position: relative;
+
+    &:before {
+      content: "";
+      background-color: transparent;
+      height: 4px;
+      width: 100%;
+      bottom: -19px;
+      left: 0;
+      position: absolute;
+    }
+
+    &--active {
+      color: var(--color-primary);
+
+      &:before {
+        background-color: var(--color-primary);
+      }
+    }
+  }
 
   ul {
     display: flex;
@@ -164,14 +204,6 @@ ol {
 
     &:hover {
       opacity: 1;
-    }
-  }
-
-  nav {
-    span {
-      display: inline-block;
-      margin-right: 12px;
-      cursor: pointer;
     }
   }
 }
@@ -230,6 +262,7 @@ ol {
 
 .section {
   padding: 80px 0;
+  position: relative;
 
   &--red {
     background-color: var(--color-primary);
@@ -256,6 +289,28 @@ ol {
         flex: 0 0 calc(50% - 8px);
       }
     }
+  }
+
+  &--background {
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0,0,0,.5);
+    }
+
+    * {
+      color: var(--color-white);
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
   }
 }
 
@@ -288,6 +343,7 @@ ol {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  flex-wrap: wrap;
 
   & ~ & {
     margin-top: 20px;
@@ -302,6 +358,10 @@ ol {
   &--three {
     .card {
       width: calc(33.33% - 13.33px);
+
+      &:nth-child(n + 4) {
+        margin-top: 20px;
+      }
     }
   }
 }
@@ -317,8 +377,11 @@ ol {
   &__additional-info {
     margin-top: auto;
     font-size: 32px;
-    position: relative;
     color: var(--color-primary);
+    border-top: 1px solid var(--color-separator);
+    width: 100%;
+    text-align: center;
+    padding-top: 16px;
   }
 
   p {
