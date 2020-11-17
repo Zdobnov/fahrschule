@@ -36,7 +36,7 @@ const Main = () => (
     <Section>
       <Article>
         <h3>Warum wir</h3>
-        <div className="cards cards--four">
+        <div className="grid grid--4">
           <div className="card">
             <img src={iconBook} alt="icon" className="icon" />
             <h6>Theoretischer Unterricht</h6>
@@ -63,7 +63,7 @@ const Main = () => (
     <Section className="section--prices section--gray">
       <Article>
         <h3>Unsere Preise und Angebote</h3>
-        <div className="cards cards--three">
+        <div className="grid grid--3">
           <div className="card">
             <h6>Anmeldung</h6>
             <p>Die Anmeldung beinhaltet die Registrierung in der Fahrschule und die Teilnahme an allen Theoriestunden.<br/>An den theoretischen Einheiten darfst du so oft teilnehmen, wie du es möchtest und gerne auch jede Einheit zwei Mal besuchen. Auch private Theoriestunden sind möglich.</p>

@@ -400,23 +400,50 @@ ol {
 //  }
 //}
 
-.cards {
-  display: flex;
-  flex-wrap: wrap;
+//.cards {
+//  display: flex;
+//  flex-wrap: wrap;
+//
+//  .card {
+//    background-color: var(--color-white);
+//    box-shadow: 0 0 10px var(--color-shadow);
+//  }
+//
+//  &.xl-3 {
+//    .card {
+//      flex: 0 0 calc(33.33% - 13.33px);
+//
+//      &:nth-child(n + 4) {
+//        margin-top: 20px;
+//      }
+//    }
+//  }
+//}
 
-  .card {
-    background-color: var(--color-white);
-    box-shadow: 0 0 10px var(--color-shadow);
+.grid {
+  display: grid;
+
+  &--3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 16px 16px;
   }
 
-  &.xl-3 {
-    .card {
-      flex: 0 0 calc(33.33% - 13.33px);
+  &--4 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 16px 16px;
+  }
+}
 
-      &:nth-child(n + 4) {
-        margin-top: 20px;
-      }
-    }
+.card {
+  background-color: var(--color-white);
+  box-shadow: 0 0 10px var(--color-shadow);
+
+  &__image {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 

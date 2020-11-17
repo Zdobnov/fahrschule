@@ -6,7 +6,21 @@ import Article from '../components/Article';
 
 // Images
 import photo9 from '../images/photo/_9.webp';
-import photo27 from '../images/photo/_27.webp';
+import photo22 from '../images/photo/_22.webp';
+import photo11 from '../images/photo/_11.webp';
+import photo3 from '../images/photo/_3.webp';
+import photo34 from '../images/photo/_34.webp';
+import photo35 from '../images/photo/_35.webp';
+import photo21 from '../images/photo/_21.webp';
+
+const ourCarsImagesArray = [
+  photo22,
+  photo11,
+  photo3,
+  photo34,
+  photo35,
+  photo21,
+];
 
 const About = () => (
   <main className="about-us">
@@ -28,22 +42,18 @@ const About = () => (
     <Section>
       <Article>
         <h3>Unser Team</h3>
-        <div className="cards xl-3">
-          <div className="card about-us__team-card">
-            {/*<img src={photo27} alt="Yunus Kalan" className="about-us__team-card--image"/>*/}123
-          </div>
-          <div className="card about-us__team-card">
-            {/*<img src={photo27} alt="Yunus Kalan" className="about-us__team-card--image"/>*/}123
-          </div>
-          <div className="card about-us__team-card">
-            {/*<img src={photo27} alt="Yunus Kalan" className="about-us__team-card--image"/>*/}123
-          </div>
-          <div className="card about-us__team-card">
-            {/*<img src={photo27} alt="Yunus Kalan" className="about-us__team-card--image"/>*/}123
-          </div>
-          <div className="card about-us__team-card">
-            {/*<img src={photo27} alt="Yunus Kalan" className="about-us__team-card--image"/>*/}123
-          </div>
+        Team
+      </Article>
+    </Section>
+    <Section className="section--gray">
+      <Article>
+        <h3>Unsere Fahrzeuge</h3>
+        <div className="grid grid--3">
+          {ourCarsImagesArray.map((image, index) => (
+            <div className="card" key={index}>
+              <div className="card__image" style={{ backgroundImage: `url(${ image })` }}/>
+            </div>
+          ))}
         </div>
       </Article>
     </Section>
