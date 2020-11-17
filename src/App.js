@@ -11,6 +11,7 @@ import Main from './pages/Main';
 // Components
 import Header from './components/Header';
 import Nav from './components/Nav';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
             <Main />
           </Route>
         </Switch>
+        <Footer />
       </StateProvider>
     </Router>
   );

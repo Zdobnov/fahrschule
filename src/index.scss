@@ -154,7 +154,24 @@ ol {
   }
 }
 
+.sticky-bar {
+  height: 60px;
+
+  &--sticky {
+    .nav-bar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      z-index: 10;
+      box-shadow: 0 0 10px var(--color-shadow);
+    }
+  }
+}
+
 .nav-bar {
+  background: var(--color-white);
+
   &__wrapper {
     display: flex;
     height: 60px;
@@ -470,5 +487,12 @@ ol {
     &--image {
 
     }
+  }
+}
+
+.footer {
+  &__copyrights {
+    border-top: 1px solid var(--color-separator);
+    padding: 20px 0;
   }
 }
