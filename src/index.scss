@@ -184,18 +184,26 @@ ol {
   }
 
   &__link {
-    display: block;
     margin-right: 20px;
     position: relative;
+    transition: color .4s ease;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 
     &:before {
       content: "";
       background-color: transparent;
       height: 4px;
       width: 100%;
-      bottom: -19px;
+      bottom: 0;
       left: 0;
       position: absolute;
+    }
+
+    &:hover {
+      color: var(--color-primary);
     }
 
     &--active {
