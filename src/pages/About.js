@@ -3,9 +3,20 @@ import React from 'react';
 // Components
 import Section from '../components/Section';
 import Article from '../components/Article';
+import LanguagesWeSpeak from '../components/LanguagesWeSpeak';
 
-// Images
+// styles
+import './About.scss';
+
 import photo9 from '../images/photo/_9.webp';
+
+// Images (team)
+import photo27 from '../images/photo/_27.webp';
+import photo4 from '../images/photo/_4.webp';
+import photo28 from '../images/photo/_28.webp';
+import photo30 from '../images/photo/_30.webp';
+
+// Images (cars)
 import photo22 from '../images/photo/_22.webp';
 import photo11 from '../images/photo/_11.webp';
 import photo3 from '../images/photo/_3.webp';
@@ -13,6 +24,7 @@ import photo34 from '../images/photo/_34.webp';
 import photo35 from '../images/photo/_35.webp';
 import photo21 from '../images/photo/_21.webp';
 
+// "Our cars" images array
 const ourCarsImagesArray = [
   photo22,
   photo11,
@@ -25,8 +37,7 @@ const ourCarsImagesArray = [
 const About = () => (
   <main className="about-us">
     <Section className="section--gray">
-      <Article>
-        <h3>Über uns</h3>
+      <Article title="Über uns">
         <div className="about-us__philosophy">
           <div>
             <h4>Philosophie</h4>
@@ -40,14 +51,69 @@ const About = () => (
       </Article>
     </Section>
     <Section>
-      <Article>
-        <h3>Unser Team</h3>
-        Team
+      <Article title="Unser Team">
+        <div className="grid grid--3">
+          <div className="card">
+            <div className="card__image" style={{ backgroundImage: `url(${ photo27 })` }}/>
+            <div className="card__content card__content--center">
+              <h4 className="card__title">Yunus Kalan</h4>
+              <h5 className="card__subtitle">Fahrlehrer & KFZ-Gutachter</h5>
+              <p>
+                Yunus ist nicht nur Miteigentümer der Fahrschule, sondern auch erfahrender Fahrlehrer, der immer für seine Schüler da ist und KFZ-Sachverständiger.
+                Für Gutachten kannst du ihn über folgende Website erreichen:<br/>
+                <a href="https://ka-gutachten.de" target="_blank" rel="noreferrer">ka-gutachten.de</a>
+              </p>
+              <LanguagesWeSpeak languages={['de', 'en', 'tr']} />
+            </div>
+          </div>
+          <div className="card">
+            <div className="card__image" style={{ backgroundImage: `url(${ photo4 })` }}/>
+            <div className="card__content card__content--center">
+              <h4 className="card__title">Dennis Polinsky</h4>
+              <h5 className="card__subtitle">Fahrlehrer</h5>
+              <p>
+                Auch Dennis ist einer der Miteigentümer der Fahrschule und einer unserer beliebtesten Fahrlehrer. Als Autohändler kennt er sich außerdem gut mit Fahrzeugen aus und kann Fahrschüler nach bestandenem Führerschein beim Autokauf beraten.
+              </p>
+              <LanguagesWeSpeak languages={['de', 'en', 'ru']} />
+            </div>
+          </div>
+          <div className="card">
+            <div className="card__image" style={{ backgroundImage: `url(${ photo28 })` }}/>
+            <div className="card__content card__content--center">
+              <h4 className="card__title">Florian</h4>
+              <h5 className="card__subtitle">Fahrlehrer</h5>
+              <p>
+                Florian ist einer unserer erfahrensten Fahrlehrer. Er ist besonders beliebt wegen seiner ruhigen und ausgeglichenen Art Lehrmethoden.
+              </p>
+              <LanguagesWeSpeak languages={['de']} />
+            </div>
+          </div>
+          <div className="card">
+            <div className="card__image" style={{ backgroundImage: `url(${ photo30 })` }}/>
+            <div className="card__content card__content--center">
+              <h4 className="card__title">Momo</h4>
+              <h5 className="card__subtitle">Fahrlehrer</h5>
+              <p>
+                Momo ist einer unserer Fahrlehrer und auf Grund seiner lustigen und lockeren Art, ist er bei unseren Fahrschülern sehr beliebt.
+              </p>
+              <LanguagesWeSpeak languages={['de', 'tr']} />
+            </div>
+          </div>
+          <div className="card">
+            <div className="card__image"/>
+            <div className="card__content card__content--center">
+              <h4 className="card__title">Melanie</h4>
+              <h5 className="card__subtitle">Backoffice</h5>
+              <p>
+                Melanie ist die Frau im Hintergrund, die alles Organisiert und dafür sorgt, dass ihr immer passende Termine mit eurem Fahrlehrer findet.
+              </p>
+            </div>
+          </div>
+        </div>
       </Article>
     </Section>
     <Section className="section--gray">
-      <Article>
-        <h3>Unsere Fahrzeuge</h3>
+      <Article title="Unsere Fahrzeuge">
         <div className="grid grid--3">
           {ourCarsImagesArray.map((image, index) => (
             <div className="card" key={index}>

@@ -27,6 +27,7 @@ function App() {
             <Main />
           </Route>
         </Switch>
+        <Header />
         <Footer />
       </StateProvider>
     </Router>
