@@ -95,7 +95,16 @@ ol {
   width: 32px;
 }
 
-.header {
+.link {
+  text-decoration: underline;
+  color: var(--color-primary);
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.primary-bar {
   height: 115px;
 
   &__wrapper {
@@ -424,15 +433,6 @@ ol {
   p {
     &:last-of-type {
       margin-bottom: auto;
-    }
-
-    a {
-      text-decoration: underline;
-      color: var(--color-primary);
-
-      &:hover {
-        text-decoration: none;
-      }
     }
   }
 }

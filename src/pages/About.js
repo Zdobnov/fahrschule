@@ -61,7 +61,7 @@ const About = () => (
               <p>
                 Yunus ist nicht nur Miteigentümer der Fahrschule, sondern auch erfahrender Fahrlehrer, der immer für seine Schüler da ist und KFZ-Sachverständiger.
                 Für Gutachten kannst du ihn über folgende Website erreichen:<br/>
-                <a href="https://ka-gutachten.de" target="_blank" rel="noreferrer">ka-gutachten.de</a>
+                <a href="https://ka-gutachten.de" target="_blank" rel="noreferrer" className="link">ka-gutachten.de</a>
               </p>
               <LanguagesWeSpeak languages={['de', 'en', 'tr']} />
             </div>
@@ -80,7 +80,7 @@ const About = () => (
           <div className="card">
             <div className="card__image" style={{ backgroundImage: `url(${ photo28 })` }}/>
             <div className="card__content card__content--center">
-              <h4 className="card__title">Florian</h4>
+              <h4 className="card__title">Florian Rohm</h4>
               <h5 className="card__subtitle">Fahrlehrer</h5>
               <p>
                 Florian ist einer unserer erfahrensten Fahrlehrer. Er ist besonders beliebt wegen seiner ruhigen und ausgeglichenen Art Lehrmethoden.
@@ -107,6 +107,7 @@ const About = () => (
               <p>
                 Melanie ist die Frau im Hintergrund, die alles Organisiert und dafür sorgt, dass ihr immer passende Termine mit eurem Fahrlehrer findet.
               </p>
+              <LanguagesWeSpeak languages={['de', 'en']} />
             </div>
           </div>
         </div>

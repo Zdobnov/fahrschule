@@ -9,15 +9,14 @@ import About from './pages/About';
 import Main from './pages/Main';
 
 // Components
-import Header from './components/Header';
+import PrimaryBar from './components/PrimaryBar';
 import Nav from './components/Nav';
-import Footer from "./components/Footer";
 
 function App() {
   return (
     <Router>
       <StateProvider>
-        <Header />
+        <PrimaryBar as="header" />
         <Nav />
         <Switch>
           <Route path="/about">
@@ -27,8 +26,13 @@ function App() {
             <Main />
           </Route>
         </Switch>
-        <Header />
-        <Footer />
+        <PrimaryBar as="footer">
+          <div className="wrapper">
+            <div className="footer__copyrights">
+              Copyright © 2020 Alle Rechte vorbehalten 2Drive fahrschule. Datenschutz.
+            </div>
+          </div>
+        </PrimaryBar>
       </StateProvider>
     </Router>
   );
