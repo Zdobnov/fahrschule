@@ -26,7 +26,13 @@ const PrimaryBar = (props) => {
           <a href="tel:+49302942923">+49 30 2942923</a>
         </div>
       </div>
-      {props.children}
+      {props.as === "footer" && (
+        <div className="wrapper">
+          <div className="footer__copyrights">
+            Copyright © 2020 Alle Rechte vorbehalten 2Drive fahrschule. <Link exact to="/policy" className="link">Datenschutz</Link>
+          </div>
+        </div>
+      )}
     </CustomTag>
   )
 };

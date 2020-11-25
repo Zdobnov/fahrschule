@@ -7,6 +7,7 @@ import { StateProvider } from './context/LanguageContext';
 // Pages
 import About from './pages/About';
 import Main from './pages/Main';
+import Policy from './pages/Policy';
 
 // Components
 import PrimaryBar from './components/PrimaryBar';
@@ -22,17 +23,14 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
+          <Route path="/policy">
+            <Policy />
+          </Route>
           <Route path="/">
             <Main />
           </Route>
         </Switch>
-        <PrimaryBar as="footer">
-          <div className="wrapper">
-            <div className="footer__copyrights">
-              Copyright © 2020 Alle Rechte vorbehalten 2Drive fahrschule. Datenschutz.
-            </div>
-          </div>
-        </PrimaryBar>
+        <PrimaryBar as="footer" />
       </StateProvider>
     </Router>
   );
