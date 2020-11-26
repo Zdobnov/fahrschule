@@ -1,0 +1,36 @@
+.contacts {
+  &__hours-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__hours {
+    font-size: 24px;
+    flex-basis: 33%;
+
+    li {
+      font-weight: 100;
+      display: flex;
+      justify-content: space-between;
+
+      &:not(:first-child) {
+        margin-top: 16px;
+      }
+    }
+
+    b {
+      display: inline-block;
+      margin-right: 24px;
+      font-weight: 400;
+    }
+  }
+
+  .card {
+    padding: 24px 16px;
+
+    p {
+      margin-top: 24px;
+      font-size: 18px;
+    }
+  }
+}

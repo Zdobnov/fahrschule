@@ -1,6 +1,7 @@
 const DE = {
   'navigation.main': 'Home',
   'navigation.about': 'Über uns',
+  'navigation.contacts': 'Kontakte',
   'promo.title': '2Drive Fahrschule',
   'promo.subtitle': 'Dein schneller Weg zum Führerschein',
   'promo.list.item.1': 'Kompetente, freundliche Fahrlehrer',

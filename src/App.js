@@ -8,6 +8,7 @@ import { StateProvider } from './context/LanguageContext';
 import About from './pages/About';
 import Main from './pages/Main';
 import Policy from './pages/Policy';
+import Contacts from './pages/Contacts';
 
 // Components
 import PrimaryBar from './components/PrimaryBar';
@@ -22,6 +23,9 @@ function App() {
         <Switch>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/contacts">
+            <Contacts />
           </Route>
           <Route path="/policy">
             <Policy />
