@@ -337,10 +337,10 @@ ol {
       top: 0;
       height: 100%;
       width: 100%;
-      background: rgba(0,0,0,.5);
+      background: rgba(0,0,0,.65);
     }
 
-    * {
+    .article__title {
       color: var(--color-white);
     }
   }
@@ -428,6 +428,17 @@ ol {
     font-weight: 100;
     color: var(--color-secondary-text);
     font-size: 16px;
+  }
+
+  &__additional-info {
+    border-top: 1px solid var(--color-separator);
+    width: 100%;
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    color: var(--color-primary);
+    font-size: 18px;
+    font-weight: 600;
   }
 
   p {

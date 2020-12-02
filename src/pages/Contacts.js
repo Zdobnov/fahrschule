@@ -9,12 +9,15 @@ import iconCall from '../images/icons/call.svg';
 import iconPlace from '../images/icons/place.svg';
 import iconMail from '../images/icons/mail.svg';
 
+// background
+import background from '../images/wallpaper.webp';
+
 // styles
 import './Contacts.scss';
 
 const Contacts = () => (
   <main className="contacts">
-    <Section className="section--gray">
+    <Section className="section--background" style={{ backgroundImage: `url(${background})` }}>
       <Article title="Kontakte">
         <div className="grid grid--3">
           <div className="card">
