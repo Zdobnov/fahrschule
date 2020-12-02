@@ -1,5 +1,6 @@
 const RU = {
   'navigation.main': 'Главная',
+  'navigation.prices': 'Цены и информация',
   'navigation.about': 'О нас',
   'navigation.contacts': 'Контакты',
   'promo.title': 'Автошкола 2Drive',

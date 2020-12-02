@@ -9,6 +9,7 @@ import About from './pages/About';
 import Main from './pages/Main';
 import Policy from './pages/Policy';
 import Contacts from './pages/Contacts';
+import Prices from './pages/Prices';
 
 // Components
 import PrimaryBar from './components/PrimaryBar';
@@ -21,6 +22,9 @@ function App() {
         <PrimaryBar as="header" />
         <Nav />
         <Switch>
+          <Route path="/prices">
+            <Prices />
+          </Route>
           <Route path="/about">
             <About />
           </Route>

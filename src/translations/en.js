@@ -1,5 +1,6 @@
 const EN = {
   'navigation.main': 'Home',
+  'navigation.prices': 'Price & Info',
   'navigation.about': 'About us',
   'navigation.contacts': 'Contacts',
   'promo.title': '2Drive Driving School',

@@ -164,140 +164,6 @@ ol {
   }
 }
 
-.sticky-bar {
-  height: 60px;
-
-  &--sticky {
-    .nav-bar {
-      position: fixed;
-      left: 0;
-      top: 0;
-      width: 100%;
-      z-index: 10;
-      box-shadow: 0 0 10px var(--color-shadow);
-    }
-  }
-}
-
-.nav-bar {
-  background: var(--color-white);
-
-  &__wrapper {
-    display: flex;
-    height: 60px;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  &__navigation {
-    display: flex;
-  }
-
-  &__link {
-    margin-right: 20px;
-    position: relative;
-    transition: color .4s ease;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-
-    &:before {
-      content: "";
-      background-color: transparent;
-      height: 4px;
-      width: 100%;
-      bottom: 0;
-      left: 0;
-      position: absolute;
-    }
-
-    &:hover {
-      color: var(--color-primary);
-    }
-
-    &--active {
-      color: var(--color-primary);
-
-      &:before {
-        background-color: var(--color-primary);
-      }
-    }
-  }
-
-  ul {
-    display: flex;
-    position: relative;
-    right: -1px;
-  }
-
-  li {
-    display: block;
-    height: 32px;
-    width: 32px;
-    margin-left: 12px;
-    cursor: pointer;
-    opacity: .5;
-    transition: opacity .4s ease;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-}
-
-.promo {
-  width: 100%;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-color: #000000;
-
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  &__content {
-    width: 40%;
-    padding: 80px 0;
-  }
-
-  &__titles {
-    position: relative;
-    padding: 0 0 16px 28px;
-
-    &:before {
-      content: "";
-      background: var(--color-primary);
-      height: 100%;
-      width: 8px;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-
-    h1,
-    h2 {
-      color: var(--color-white);
-    }
-
-    h1 {
-      font-size: 48px;
-      font-weight: 100;
-    }
-  }
-
-  ol {
-    margin: 40px 0;
-
-    li {
-      color: var(--color-silver-chalice);
-    }
-  }
-}
-
 .section {
   padding: 80px 0;
   position: relative;
@@ -376,6 +242,11 @@ ol {
 .grid {
   display: grid;
 
+  &--2 {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 16px;
+  }
+
   &--3 {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 16px 16px;
@@ -422,6 +293,7 @@ ol {
   &__title {
     font-size: 24px;
     font-weight: 100;
+    text-align: center;
   }
 
   &__subtitle {

@@ -4,6 +4,9 @@ import Translate from './Translate';
 
 import promo from '../images/promo.webp';
 
+// styles
+import './Promo.scss';
+
 const Promo = () => {
   return (
     <div className="promo" style={{ backgroundImage: `url(${promo})` }}>

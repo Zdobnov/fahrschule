@@ -9,6 +9,9 @@ import flagDE from '../images/icons/flag-de.svg';
 import flagUK from '../images/icons/flag-uk.svg';
 import flagRU from '../images/icons/flag-ru.svg';
 
+// styles
+import './Nav.scss';
+
 const languages = [{
   iconSrc: flagDE,
   name: 'DE',
@@ -55,6 +58,9 @@ const Nav = () => {
           <nav className="nav-bar__navigation">
             <NavLink exact to="/" className="nav-bar__link" activeClassName="nav-bar__link--active">
               <Translate>navigation.main</Translate>
+            </NavLink>
+            <NavLink exact to="/prices" className="nav-bar__link" activeClassName="nav-bar__link--active">
+              <Translate>navigation.prices</Translate>
             </NavLink>
             <NavLink exact to="/about" className="nav-bar__link" activeClassName="nav-bar__link--active">
               <Translate>navigation.about</Translate>
