@@ -1,5 +1,6 @@
 const DE = {
   'navigation.main': 'Home',
+  'navigation.license': 'Führerschein',
   'navigation.prices': 'Preise & Infos',
   'navigation.about': 'Über uns',
   'navigation.contacts': 'Kontakte',

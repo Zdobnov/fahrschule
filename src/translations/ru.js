@@ -1,5 +1,6 @@
 const RU = {
   'navigation.main': 'Главная',
+  'navigation.license': 'Водительское удостоверение',
   'navigation.prices': 'Цены и информация',
   'navigation.about': 'О нас',
   'navigation.contacts': 'Контакты',

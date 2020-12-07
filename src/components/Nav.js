@@ -59,6 +59,9 @@ const Nav = () => {
             <NavLink exact to="/" className="nav-bar__link" activeClassName="nav-bar__link--active">
               <Translate>navigation.main</Translate>
             </NavLink>
+            <NavLink exact to="/license" className="nav-bar__link" activeClassName="nav-bar__link--active">
+              <Translate>navigation.license</Translate>
+            </NavLink>
             <NavLink exact to="/prices" className="nav-bar__link" activeClassName="nav-bar__link--active">
               <Translate>navigation.prices</Translate>
             </NavLink>

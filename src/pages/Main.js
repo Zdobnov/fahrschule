@@ -1,16 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Promo from '../components/Promo';
 import Section from '../components/Section';
 import Article from '../components/Article';
 
-import iconBook from '../images/icons/book.svg';
+import iconLibraryBooks from '../images/icons/library_books.svg';
 import iconAltRoute from '../images/icons/alt-route.svg';
 import iconDevices from '../images/icons/devices.svg';
 import iconChat from '../images/icons/chat.svg';
 
 import wallpaper from '../images/wallpaper.webp';
-import {Link} from "react-router-dom";
 
 const Main = () => (
   <>
@@ -39,7 +39,7 @@ const Main = () => (
         <div className="grid grid--4">
           <div className="card">
             <div className="card__content card__content--center">
-              <img src={iconBook} alt="icon" className="icon card__icon" />
+              <img src={iconLibraryBooks} alt="icon" className="icon card__icon" />
               <h4 className="card__title">Theoretischer Unterricht</h4>
               <p>Unser Unterricht findet auf dem neusten Stand und von ausgebildeten Fahrlehrern statt. Uns ist wichtig, nicht nur Wissen zu vermitteln, sondern das Lernen interessant mit Freude zu gestalten.</p>
             </div>
