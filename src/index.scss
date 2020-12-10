@@ -281,3 +281,23 @@ ol {
     padding: 20px 0;
   }
 }
+
+.kfz {
+  text-align: center;
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  &__subtitle {
+    font-size: 13px;
+    margin-top: 0;
+  }
+}
+
+.text {
+  &--white {
+    color: var(--color-white);
+  }
+}

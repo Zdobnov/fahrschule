@@ -35,7 +35,7 @@ const Contacts = () => (
             <div className="card__content card__content--center">
               <img src={iconCall} alt="icon" className="icon card__icon" />
               <h4 className="card__title">Telefon</h4>
-              <p><a href="tel:+49302942923" className="link">030 2942923</a></p>
+              <p><a href="tel:+49302942923" className="link">+49 30 2942923</a></p>
             </div>
           </div>
           <div className="card">
@@ -69,7 +69,7 @@ const Contacts = () => (
           Du hast eine Frage an uns, ein Anliegen oder möchtest gerne einen Rückruf von uns erhalten, dann schreib uns einfach eine Email an <a href="mailto:fahrschule2drive@gmx.de" className="link">fahrschule2drive@gmx.de</a>.<br/>
           Schreib gerne direkt ein passendes Rückrufdatum dazu.
         </p>
-        <p>Oder ruf uns während unserer Öffungszeiten direkt an, unter der Nummer: <a href="tel:+49302942923" className="link">030 2942923</a></p>
+        <p>Oder ruf uns während unserer Öffungszeiten direkt an, unter der Nummer: <a href="tel:+49302942923" className="link">+49 30 2942923</a></p>
         <p>Wir freuen uns auf deine Kontaktaufnahme und melden uns zeitnah bei dir zurück.</p>
       </Article>
     </Section>
