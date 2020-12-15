@@ -28,11 +28,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h6 {
-  font-size: 24px;
-  margin: 12px 0;
-}
-
 p {
   margin: 12px 0;
 
@@ -116,7 +111,7 @@ ol {
 
   &__logo {
     margin-right: auto;
-    width: 185px;
+    width: 180px;
     height: 64px;
   }
 
@@ -273,26 +268,6 @@ ol {
     &:last-of-type {
       margin-bottom: auto;
     }
-  }
-}
-
-.footer {
-  &__copyrights {
-    padding: 20px 0;
-  }
-}
-
-.kfz {
-  text-align: center;
-
-  &__title {
-    font-size: 24px;
-    margin-bottom: 0;
-  }
-
-  &__subtitle {
-    font-size: 13px;
-    margin-top: 0;
   }
 }
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // logo
-import logo from '../images/logo.png';
+import logo from '../images/logo.svg';
 
 // icons
 import iconCall from '../images/icons/call.svg';

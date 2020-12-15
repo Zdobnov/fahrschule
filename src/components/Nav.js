@@ -68,9 +68,6 @@ const Nav = () => {
             <NavLink exact to="/about" className="nav-bar__link" activeClassName="nav-bar__link--active">
               <Translate>navigation.about</Translate>
             </NavLink>
-            <NavLink exact to="/contacts" className="nav-bar__link" activeClassName="nav-bar__link--active">
-              <Translate>navigation.contacts</Translate>
-            </NavLink>
           </nav>
           <ul>
             {languages.map((language, index) => (

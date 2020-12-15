@@ -3,7 +3,6 @@ const RU = {
   'navigation.license': 'Водительское удостоверение',
   'navigation.prices': 'Цены и информация',
   'navigation.about': 'О нас',
-  'navigation.contacts': 'Контакты',
   'promo.title': 'Автошкола 2Drive',
   'promo.subtitle': 'Ваш быстрый путь к водительскому удостоверению',
   'promo.list.item.1': 'Компетентные, дружелюбные инструкторы по вождению',

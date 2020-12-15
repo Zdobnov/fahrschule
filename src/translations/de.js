@@ -3,7 +3,6 @@ const DE = {
   'navigation.license': 'Führerschein',
   'navigation.prices': 'Preise & Infos',
   'navigation.about': 'Über uns',
-  'navigation.contacts': 'Kontakte',
   'promo.title': '2Drive Fahrschule',
   'promo.subtitle': 'Dein schneller Weg zum Führerschein',
   'promo.list.item.1': 'Kompetente, freundliche Fahrlehrer',

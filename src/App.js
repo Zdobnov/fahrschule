@@ -8,13 +8,13 @@ import { StateProvider } from './context/LanguageContext';
 import About from './pages/About';
 import Main from './pages/Main';
 import Policy from './pages/Policy';
-import Contacts from './pages/Contacts';
 import Prices from './pages/Prices';
 import License from './pages/License';
 
 // Components
 import PrimaryBar from './components/PrimaryBar';
 import Nav from './components/Nav';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -32,9 +32,6 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/contacts">
-            <Contacts />
-          </Route>
           <Route path="/policy">
             <Policy />
           </Route>
@@ -42,7 +39,8 @@ function App() {
             <Main />
           </Route>
         </Switch>
-        <PrimaryBar as="footer" />
+        {/*<PrimaryBar as="footer" />*/}
+        <Footer />
       </StateProvider>
     </Router>
   );

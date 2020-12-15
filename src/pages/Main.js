@@ -108,31 +108,6 @@ const Main = () => (
         <p className="text--white">Wir stehen Dir in allen Fragen jederzeit gerne zur Verfügung und freuen uns über Deinen Besuch in unserer Fahrschule. Gerne kannst du hier direkt einen Termin für ein Beratungsgespräch anfragen.</p>
       </Article>
     </Section>
-    <Section
-      className="section--gray"
-    >
-      <Article title={(<>Übrigens m wir auch <a href="https://ka-gutachten.de/" className="link" target="_blank" rel="noreferrer">KFZ-Gutachten</a></>)}>
-        <p className="kfz__title">Yunus Kalan</p>
-        <p className="kfz__subtitle">Kfz-Gutachter & Wirt.-Ing./Masch.</p>
-        <div className="grid grid--2">
-          <div>
-            <p>TÜV Rheinland zertifizierter Sachverständiger</p>
-            <ol>
-              <li>Schadengutachten</li>
-              <li>Haftpflicht- & Kaskogutachten</li>
-              <li>Fahrzeugbewertung</li>
-              <li>Beweissicherung</li>
-            </ol>
-          </div>
-          <div>
-            <p>Mobil: <a href="tel:+491633705199" className="link">+49 163 3705199</a></p>
-            <p>Telefon: <a href="tel:+49302942923" className="link">+49 30 2942923</a></p>
-            <p>Email: <a href="mailto:info@ka-gutachten.de" className="link">info@ka-gutachten.de</a></p>
-            <p>Web: <a href="https://ka-gutachten.de/" className="link">ka-gutachten.de</a></p>
-          </div>
-        </div>
-      </Article>
-    </Section>
   </>
 );
 
