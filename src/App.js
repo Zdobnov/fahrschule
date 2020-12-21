@@ -5,33 +5,18 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { StateProvider } from './context/LanguageContext';
 
 // Pages
-import About from './pages/About';
 import Main from './pages/Main';
 import Policy from './pages/Policy';
-import Prices from './pages/Prices';
-import License from './pages/License';
 
 // Components
-import PrimaryBar from './components/PrimaryBar';
-import Nav from './components/Nav';
-import Footer from './components/Footer';
+import Header from './components/Header';
 
 function App() {
   return (
     <Router>
       <StateProvider>
-        <PrimaryBar as="header" />
-        <Nav />
+        <Header />
         <Switch>
-          <Route path="/license">
-            <License />
-          </Route>
-          <Route path="/prices">
-            <Prices />
-          </Route>
-          <Route path="/about">
-            <About />
-          </Route>
           <Route path="/policy">
             <Policy />
           </Route>
@@ -39,8 +24,7 @@ function App() {
             <Main />
           </Route>
         </Switch>
-        {/*<PrimaryBar as="footer" />*/}
-        <Footer />
+        {/* footer */}
       </StateProvider>
     </Router>
   );

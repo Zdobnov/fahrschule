@@ -1,51 +1,14 @@
 .promo {
-  width: 100%;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  padding-top: 308px;
+  background: url('../images/wallpaper-1.webp') center center no-repeat;
   background-size: cover;
 
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+  * {
+    color: var(--color-white);
   }
 
-  &__content {
-    width: 40%;
-    padding: 80px 0;
-  }
-
-  &__titles {
-    position: relative;
-    padding: 0 0 16px 28px;
-
-    &:before {
-      content: "";
-      background: var(--color-primary);
-      height: 100%;
-      width: 8px;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-
-    h1,
-    h2 {
-      color: var(--color-white);
-    }
-
-    h1 {
-      font-size: 48px;
-      font-weight: 100;
-    }
-  }
-
-  ol {
-    margin: 40px 0;
-
-    li {
-      color: var(--color-silver-chalice);
-    }
+  &__title {
+    font-size: 64px;
+    font-weight: 600;
   }
 }

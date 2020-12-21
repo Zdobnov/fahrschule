@@ -1,13 +1,12 @@
 :root {
   --color-primary: #e02b20;
-  --color-secondary: #f3f3f3;
-  --color-primary-text: #454545;
-  --color-secondary-text: #666666;
-  --color-separator: #cccccc;
+  --color-primary-text: #000000;
+  --color-secondary-text: #4d4d4d;
+
+  --color-background: #f7fcfd;
+  --color-separator: rgba(0,0,0, .05);
 
   --color-white: #ffffff;
-  --color-silver-chalice: #ababab;
-  --color-shadow: rgba(0,0,0,0.25);
 }
 
 * {
@@ -28,251 +27,66 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-p {
-  margin: 12px 0;
-
-  & + h4,
-  & + h5,
-  & + h6 {
-    margin-top: 24px;
-  }
-}
-
-ol {
-  li {
-    padding-left: 24px;
-    position: relative;
-    line-height: 28px;
-
-    &:before {
-      content: "";
-      background: var(--color-primary);
-      width: 8px;
-      position: absolute;
-      left: 0;
-      height: 1px;
-      top: 50%;
-    }
-  }
-}
-
 .wrapper {
   width: 100%;
-  max-width: 1408px;
+  max-width: 1290px;
   margin: 0 auto;
-  padding: 0 16px;
-}
-
-.button {
-  color: var(--color-white);
-  text-transform: uppercase;
-  padding: 0 32px;
-  background: var(--color-primary);
-  position: relative;
-  transition: background-color .4s ease;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  height: 52px;
-  display: inline-flex;
-  align-items: center;
-  font-size: 16px;
-  line-height: 16px;
-
-  &:hover {
-    background-color: #961c14;
-  }
-}
-
-.icon {
-  display: block;
-  height: 32px;
-  width: 32px;
-}
-
-.link {
-  text-decoration: underline;
-  color: var(--color-primary);
-
-  &:hover {
-    text-decoration: none;
-  }
-}
-
-.primary-bar {
-  height: 115px;
-
-  &__wrapper {
-    border-bottom: 1px solid var(--color-separator);
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  &__logo {
-    margin-right: auto;
-    width: 180px;
-    height: 64px;
-  }
-
-  &__phone,
-  &__address {
-    display: flex;
-    align-items: center;
-
-    .icon {
-      flex: 0 0 32px;
-      margin-right: 16px;
-    }
-
-    a {
-      font-weight: bold;
-      color: var(--color-primary-text);
-      position: relative;
-      top: 0;
-      transition: color .4s ease;
-
-      &:after {
-        content: "";
-        position: absolute;
-        bottom: -2px;
-        height: 1px;
-        width: 0;
-        left: 0;
-        background: transparent;
-        transition: all .4s ease;
-      }
-
-      &:hover {
-        color: var(--color-primary);
-
-        &:after {
-          width: 100%;
-          background-color: var(--color-primary);
-        }
-      }
-    }
-  }
-
-  &__address {
-    margin-right: 48px;
-  }
-}
-
-.article {
-  position: relative;
-  padding: 12px 0 0;
-
-  &:before {
-    content: "";
-    background-color: var(--color-primary);
-    height: 3px;
-    width: 50px;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
-  &__title {
-    font-size: 32px;
-    margin-bottom: 40px;
-    font-weight: 100;
-  }
+  padding: 0;
 }
 
 .grid {
   display: grid;
+  grid-gap: 30px 30px;
 
   &--2 {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 16px;
   }
 
   &--3 {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 16px 16px;
   }
 
   &--4 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 16px 16px;
   }
 }
 
-.card {
+.cta {
+  border: 2px solid var(--color-primary);
+  border-radius: 25px;
+  background: none;
+  height: 50px;
+  font-weight: 600;
+  padding: 0 48px;
+
+  &--text-white {
+    color: var(--color-white);
+  }
+}
+
+.section-header {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-white);
-  box-shadow: 0 0 10px var(--color-shadow);
-
-  &__image {
-    width: 100%;
-    flex: 0 0 400px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-    flex: 1 1 100%;
-
-    &--center {
-      p {
-        text-align: center;
-      }
-    }
-  }
+  align-items: center;
 
   &__icon {
-    margin-bottom: 4px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    &--fahrschule {
+      height: 48px;
+      width: 48px;
+    }
+
+    &--our-cars,
+    &--tutors {
+      height: 56px;
+      width: 56px;
+    }
   }
 
   &__title {
-    font-size: 24px;
-    font-weight: 100;
-    text-align: center;
-  }
-
-  &__subtitle {
-    font-weight: 100;
-    color: var(--color-secondary-text);
-    font-size: 16px;
-  }
-
-  &__additional-info,
-  &__details {
-    border-top: 1px solid var(--color-separator);
-    width: 100%;
-    display: flex;
-    padding: 16px;
-    justify-content: center;
-  }
-
-  &__additional-info {
-    color: var(--color-primary);
-    font-size: 18px;
+    font-size: 48px;
     font-weight: 600;
-  }
-
-  &__details {
-    color: var(--color-secondary-text);
-    font-size: 14px;
-    text-align: center;
-  }
-
-  p {
-    &:last-of-type {
-      margin-bottom: auto;
-    }
-  }
-}
-
-.text {
-  &--white {
-    color: var(--color-white);
   }
 }

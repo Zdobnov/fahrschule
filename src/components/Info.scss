@@ -1,0 +1,25 @@
+.info {
+  padding: 60px 0 50px;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    &--warning {
+      color: var(--color-primary);
+    }
+  }
+
+  &__description {
+    color: var(--color-secondary-text);
+
+    * {
+      color: inherit;
+    }
+  }
+
+  .grid {
+    margin-bottom: 40px;
+  }
+}
