@@ -32,5 +32,47 @@
     height: 188px;
     width: 188px;
     border-radius: 50%;
+    margin-bottom: 22px;
+  }
+
+  &__languages {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__language {
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin: 0 5px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+
+    &--de {
+      background-image: url('../images/icons/flag-germany.svg');
+    }
+
+    &--en {
+      background-image: url('../images/icons/flag-united-kingdom.svg');
+    }
+
+    &--tu {
+      background-image: url('../images/icons/flag-turkey.svg');
+    }
+
+    &--ru {
+      background-image: url('../images/icons/flag-russia.svg');
+    }
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  &__description {
+    margin-top: 10px;
+    color: var(--color-secondary-text);
   }
 }

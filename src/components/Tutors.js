@@ -24,16 +24,41 @@ const Tutors = () => (
       </div>
       <div className="grid grid--4">
         <div className="tutor">
-          <img src={Tutor1} alt="tutor 1" />
+          <img src={Tutor1} alt="tutor 1" className="tutor__image" />
+          <ul className="tutor__languages">
+            <li className="tutor__language tutor__language--de" />
+            <li className="tutor__language tutor__language--en" />
+            <li className="tutor__language tutor__language--ru" />
+          </ul>
+          <span className="tutor__name">Деннис Полинский</span>
+          <span className="tutor__description">12 лет опыта</span>
         </div>
         <div className="tutor">
-          <img src={Tutor2} alt="tutor 2" />
+          <img src={Tutor2} alt="tutor 2" className="tutor__image" />
+          <ul className="tutor__languages">
+            <li className="tutor__language tutor__language--de" />
+            <li className="tutor__language tutor__language--en" />
+            <li className="tutor__language tutor__language--tu" />
+          </ul>
+          <span className="tutor__name">Юнас Калан</span>
+          <span className="tutor__description">12 лет опыта</span>
         </div>
         <div className="tutor">
-          <img src={Tutor3} alt="tutor 3" />
+          <img src={Tutor3} alt="tutor 3" className="tutor__image" />
+          <ul className="tutor__languages">
+            <li className="tutor__language tutor__language--de" />
+          </ul>
+          <span className="tutor__name">Флориан</span>
+          <span className="tutor__description">12 лет опыта</span>
         </div>
         <div className="tutor">
-          <img src={Tutor4} alt="tutor 4" />
+          <img src={Tutor4} alt="tutor 4" className="tutor__image" />
+          <ul className="tutor__languages">
+            <li className="tutor__language tutor__language--de" />
+            <li className="tutor__language tutor__language--tu" />
+          </ul>
+          <span className="tutor__name">Момо</span>
+          <span className="tutor__description">12 лет опыта</span>
         </div>
       </div>
       <p className="tutors__description">
