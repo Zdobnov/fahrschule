@@ -1,5 +1,5 @@
 const DE = {
-  'navigation.main': 'Home',
+  'header.navigation.main': 'Home',
 };
 
 export default DE;

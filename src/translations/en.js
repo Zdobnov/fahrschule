@@ -1,5 +1,5 @@
 const EN = {
-  'navigation.main': 'Home',
+  'header.navigation.main': 'Home',
 };
 
 export default EN;

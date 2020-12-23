@@ -1,5 +1,5 @@
 const RU = {
-  'navigation.main': 'Главная',
+  'header.navigation.main': 'Главная',
 };
 
 export default RU;
