@@ -7,6 +7,7 @@ import Fahrschule from '../components/Fahrschule';
 import Tutors from '../components/Tutors';
 import Exam from '../components/Exam';
 import Prices from '../components/Prices';
+import Map from '../components/Map';
 
 const Main = () => (
   <>
@@ -18,6 +19,7 @@ const Main = () => (
     Feedbacks
     <Exam />
     <Prices />
+    <Map />
   </>
 );
 
