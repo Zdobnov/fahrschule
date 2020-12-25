@@ -12,7 +12,7 @@ const Map = () => {
           <div className="form__title">Остались вопросы?</div>
           <div className="form__content">
             <input type="text" placeholder="Ваше имя"/>
-            <input type="text" placeholder="Ваше имя"/>
+            <input type="text" placeholder="Телефон"/>
             <textarea placeholder="Сообщение" />
           </div>
           <button className="cta">Отправить</button>
