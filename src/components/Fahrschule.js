@@ -14,7 +14,7 @@ const Fahrschule = () => (
     <div className="wrapper">
       <div className="section-header">
         <div className="section-header__icon section-header__icon--fahrschule" style={{ backgroundImage: `url(${IconFahrschule})` }}/>
-        <h2 className="section-header__title">Автошкола</h2>
+        <h2 className="section-header__title">Наши инструкторы</h2>
       </div>
       <div className="fahrschule__content">
         <div className="about">

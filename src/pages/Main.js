@@ -11,13 +11,14 @@ import Map from '../components/Map';
 import PreFooter from '../components/PreFooter';
 import PostFooter from '../components/PostFooter';
 import Footer from '../components/Footer';
+import OurCars from '../components/OurCars';
 
 const Main = () => (
   <>
     <Promo />
     <Info />
     <Fahrschule />
-    Carousel place
+    <OurCars />
     <Tutors />
     Feedbacks
     <Exam />

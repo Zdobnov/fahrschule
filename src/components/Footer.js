@@ -20,7 +20,7 @@ const Footer = () => (
             </tr>
             <tr>
               <td>Mittwoch</td>
-              <td>nach Vereinbarung</td>
+              <td>nach Termin</td>
             </tr>
             <tr>
               <td>Donnerstag</td>
