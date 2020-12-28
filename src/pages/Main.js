@@ -12,6 +12,7 @@ import PreFooter from '../components/PreFooter';
 import PostFooter from '../components/PostFooter';
 import Footer from '../components/Footer';
 import OurCars from '../components/OurCars';
+import Feedbacks from '../components/Feedbacks';
 
 const Main = () => (
   <>
@@ -20,7 +21,7 @@ const Main = () => (
     <Fahrschule />
     <OurCars />
     <Tutors />
-    Feedbacks
+    <Feedbacks />
     <Exam />
     <Prices />
     <Map />

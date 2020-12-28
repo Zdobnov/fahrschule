@@ -1,14 +1,67 @@
 .promo {
-  padding-top: 308px;
+  padding: 256px 0 60px;
   background: url('../images/wallpaper-1.webp') center center no-repeat;
   background-size: cover;
+
+  &__title {
+    font-size: 64px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 46px;
+  }
+
+  &__description {
+    display: flex;
+    margin-bottom: 140px;
+    align-items: center;
+  }
+
+  &__price {
+    font-size: 52px;
+    font-weight: 700;
+    margin: 0 30px;
+    position: relative;
+    top: -3px;
+  }
 
   * {
     color: var(--color-white);
   }
 
-  &__title {
-    font-size: 64px;
-    font-weight: 600;
+  .wrapper {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.benefit {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__image {
+    margin-bottom: 30px;
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__languages {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+
+    img {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin: 0 6px;
+    }
   }
 }

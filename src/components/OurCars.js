@@ -19,23 +19,21 @@ const imagesUrl = [
   Photo8,
 ];
 
-const OurCars = () => {
-  return (
-    <section className="our-cars">
-      <div className="wrapper">
-        <Carousel itemsToShow={4} pagination={false}>
-          {imagesUrl.map((url, index) => (
-            <div className="our-cars__item" key={index} style={{ backgroundImage: `url(${url})` }}>
-              <p className="our-cars__description">
-                Audi А3 E-tron<br/>
-                Automatikgetriebe
-              </p>
-            </div>
-          ))}
-        </Carousel>
-      </div>
-    </section>
-  );
-}
+const OurCars = () => (
+  <section className="our-cars">
+    <div className="wrapper">
+      <Carousel itemsToShow={4} pagination={false}>
+        {imagesUrl.map((url, index) => (
+          <div className="our-cars__item" key={index} style={{ backgroundImage: `url(${url})` }}>
+            <p className="our-cars__description">
+              Audi А3 E-tron<br/>
+              Automatikgetriebe
+            </p>
+          </div>
+        ))}
+      </Carousel>
+    </div>
+  </section>
+);
 
 export default OurCars;

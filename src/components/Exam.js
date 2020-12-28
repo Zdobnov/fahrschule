@@ -5,7 +5,7 @@ import './Exam.scss';
 import IconExam from '../images/icons/exam.svg';
 
 const Exam = () => (
-  <section className="exam">
+  <section className="exam overlay">
     <div className="wrapper">
       <div className="section-header">
         <div className="section-header__icon section-header__icon--tutors" style={{ backgroundImage: `url(${IconExam})` }}/>
