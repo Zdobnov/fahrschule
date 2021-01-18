@@ -3,11 +3,17 @@
   border-bottom: 1px solid var(--color-separator);
 
   &__title {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
-    padding: 0 0 0 46px;
+    padding: 0 0 0 34px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 992px) {
+      margin-bottom: 30px;
+      font-size: 24px;
+      padding-left: 46px;
+    }
 
     &:before {
       content: "";
@@ -38,25 +44,52 @@
   }
 
   &__details {
-    flex: 0 0 550px;
+    flex: 0 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
+    @media screen and (min-width: 992px) {
+      flex-basis: 550px;
+      justify-content: space-between;
+    }
   }
 
   .wrapper {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+
+    @media screen and (min-width: 992px) {
+      flex-direction: row;
+      justify-content: space-around;
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
   }
 }
 
 .working-hours {
-  flex: 0 0 550px;
+  flex: 0 0 auto;
+
+  @media screen and (max-width: 991px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 992px) {
+    flex-basis: 330px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: 550px;
+  }
 
   &__list {
-    margin-left: 46px;
+    margin-left: 34px;
+
+    @media screen and (min-width: 992px) {
+      margin-left: 46px;
+    }
 
     tr {
       &:not(:last-child) {
@@ -98,6 +131,10 @@
   }
 
   p {
-    padding-left: 46px;
+    padding-left: 34px;
+
+    @media screen and (min-width: 992px) {
+      padding-left: 46px;
+    }
   }
 }

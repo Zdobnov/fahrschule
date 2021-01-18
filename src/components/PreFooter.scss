@@ -4,10 +4,16 @@
     width: 190px;
     background: url('../images/logo.svg') 0 0 no-repeat;
     background-size: cover;
+
+    @media screen and (max-width: 991px) {
+      display: none;
+    }
   }
 
   &__content {
-    display: flex;
+    @media screen and (min-width: 992px) {
+      display: flex;
+    }
 
     a {
       text-decoration: none;
@@ -20,11 +26,25 @@
   }
 
   &__item {
-    padding: 0 0 0 44px;
+    padding: 0 0 0 34px;
     position: relative;
 
+    @media screen and (min-width: 992px) {
+      padding-left: 44px;
+    }
+
     &:not(:first-child) {
-      margin-left: 80px;
+      @media screen and (max-width: 991px) {
+        margin-top: 20px;
+      }
+
+      @media screen and (min-width: 992px) {
+        margin-left: 20px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-left: 80px;
+      }
     }
 
     &:before {
@@ -56,15 +76,24 @@
   }
 
   &__title {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
     display: block;
+
+    @media screen and (min-width: 992px) {
+      font-size: 24px;
+    }
   }
 
   .wrapper {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
     justify-content: space-between;
+
+    @media screen and (min-width: 992px) {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
   }
 }

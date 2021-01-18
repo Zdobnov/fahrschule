@@ -1,13 +1,27 @@
 .post-footer {
   &__copyright {
     color: var(--color-secondary-text);
+
+    @media screen and (max-width: 991px) {
+      order: 1;
+      margin-top: 20px;
+    }
   }
 
   .wrapper {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
-    justify-content: space-between;
+
+    @media screen and (max-width: 991px) {
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 992px) {
+      justify-content: space-between;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
 }
 
