@@ -60,10 +60,18 @@
   }
 
   .rec-arrow-left {
-    left: 40px;
+    left: 20px;
+
+    @media screen and (min-width: 992px) {
+      left: 40px;
+    }
   }
 
   .rec-arrow-right {
-    right: 40px;
+    right: 20px;
+
+    @media screen and (min-width: 992px) {
+      right: 40px;
+    }
   }
 }

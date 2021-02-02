@@ -1,3 +1,11 @@
+/*
+ * Breakpoints are:
+ * 576px
+ * 768px
+ * 992px
+ * 1200px
+ */
+
 :root {
   --color-primary: #e02b20;
   --color-primary-text: #000000;
@@ -19,6 +27,14 @@
   text-decoration: none;
   font-style: normal;
   color: var(--color-primary-text);
+}
+
+html {
+  font-size: 14px;
+
+  @media screen and (min-width: 992px) {
+    font-size: 16px;
+  }
 }
 
 body {
@@ -104,6 +120,10 @@ body {
     background-position: 0 0;
     background-repeat: no-repeat;
 
+    @media screen and (max-width: 767px) {
+      transform: scale(0.8);
+    }
+
     &--fahrschule {
       height: 48px;
       width: 48px;
@@ -117,8 +137,12 @@ body {
   }
 
   &__title {
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 600;
+
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+    }
   }
 
   &__subtitle {

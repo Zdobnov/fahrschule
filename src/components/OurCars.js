@@ -19,10 +19,33 @@ const imagesUrl = [
   Photo8,
 ];
 
+const carouselBreakPoints = [
+  {
+    width: 1,
+    itemsToShow: 1,
+  },
+  {
+    width: 768,
+    itemsToShow: 2,
+  },
+  {
+    width: 992,
+    itemsToShow: 3,
+  },
+  {
+    width: 1200,
+    itemsToShow: 4,
+  },
+];
+
 const OurCars = () => (
   <section className="our-cars">
     <div className="wrapper">
-      <Carousel itemsToShow={4} pagination={false}>
+      <Carousel
+        // itemsToShow={4}
+        pagination={false}
+        breakPoints={carouselBreakPoints}
+      >
         {imagesUrl.map((url, index) => (
           <div className="our-cars__item" key={index} style={{ backgroundImage: `url(${url})` }}>
             <p className="our-cars__description">
