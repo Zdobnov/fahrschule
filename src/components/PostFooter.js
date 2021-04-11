@@ -8,9 +8,15 @@ const PostFooter = () => (
     <div className="wrapper">
       <p className="post-footer__copyright">Copyright © 2020 Alle Rechte vorbehalten 2Drive fahrschule. Datenschutz</p>
       <ul className="social">
-        <li className="social__item social__item--facebook"><a href="#" /></li>
-        <li className="social__item social__item--instagram"><a href="#" /></li>
-        <li className="social__item social__item--youtube"><a href="#" /></li>
+        <li className="social__item social__item--facebook">
+          <a href="#" />
+        </li>
+        <li className="social__item social__item--instagram">
+          <a href="#" />
+        </li>
+        <li className="social__item social__item--whatsapp">
+          <a href="#" />
+        </li>
       </ul>
     </div>
   </section>

@@ -37,6 +37,12 @@
       display: block;
       width: 30px;
       height: 30px;
+      opacity: .85;
+      transition: opacity .4s ease;
+
+      &:hover {
+        opacity: 1;
+      }
     }
 
     &--facebook {
@@ -51,9 +57,9 @@
       }
     }
 
-    &--youtube {
+    &--whatsapp {
       a {
-        background: url('../images/icons/youtube.svg') 0 0 no-repeat;
+        background: url('../images/icons/whatsapp.svg') 0 0 no-repeat;
       }
     }
   }

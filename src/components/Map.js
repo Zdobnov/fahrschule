@@ -15,7 +15,7 @@ const Map = () => {
             <input type="text" placeholder="Телефон"/>
             <textarea placeholder="Сообщение" />
           </div>
-          <button className="cta">Отправить</button>
+          <button className="cta cta--dark">Отправить</button>
         </div>
       </div>
     </section>

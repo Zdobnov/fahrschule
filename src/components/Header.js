@@ -32,7 +32,7 @@ const Header = () => {
           <span className="nav__item" onClick={handleLanguageClick('EN')}>EN</span>
           <span className="nav__item" onClick={handleLanguageClick('RU')}>RU</span>
         </nav>
-        {/*<button className="header__cta cta cta--text-white">Einschreiben</button>*/}
+        <button className="header__cta cta">Einschreiben</button>
       </div>
     </header>
   );
