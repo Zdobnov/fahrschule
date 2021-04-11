@@ -1,18 +1,38 @@
 .fahrschule {
   background: var(--color-background) url("../images/background/fahrschule.svg") 0 center no-repeat;
-  padding: 70px 0;
+  padding: 40px 0;
+
+  @media screen and (min-width: 992px) {
+    padding: 80px 0;
+  }
 
   &__content {
-    display: flex;
-    margin: 80px 0 160px;
+    margin: 50px 0 80px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+    }
+
+    @media screen and (min-width: 992px) {
+      margin: 80px 0 160px;
+    }
   }
 }
 
 .about {
-  flex: 0 0 45.8%;
-  border-right: 1px solid var(--color-separator);
-  padding-right: 70px;
-  margin-right: 70px;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    flex: 0 0 45.8%;
+    border-right: 1px solid var(--color-separator);
+    padding-right: 40px;
+    margin: 0 40px 0 0;
+  }
+
+  @media screen and (min-width: 992px) {
+    padding-right: 70px;
+    margin-right: 70px;
+  }
 
   &__image {
     display: block;
@@ -29,5 +49,46 @@
 }
 
 .faq {
-  flex: 1 1 50%;
+  @media screen and (min-width: 768px) {
+    flex: 1 1 50%;
+  }
+
+  &__item {
+    background: url("../images/icons/plus.svg") calc(100% - 4px) 20px no-repeat;
+    background-size: 20px 20px;
+    border-top: 1px solid var(--color-separator);
+
+    &:last-child {
+      border-bottom: 1px solid var(--color-separator);
+    }
+
+    &--active {
+      background: url("../images/icons/minus.svg") calc(100% - 4px) 20px no-repeat;
+      background-size: 20px 20px;
+    }
+  }
+
+  &__question {
+    cursor: pointer;
+    font-weight: 600;
+    padding: 20px 40px 20px 0;
+  }
+
+  &__answer {
+    padding-bottom: 20px;
+
+    & > *:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    ul {
+      li {
+        &:before {
+          content: '—';
+          color: var(--color-primary);
+          padding-right: 12px;
+        }
+      }
+    }
+  }
 }

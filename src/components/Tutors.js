@@ -20,7 +20,7 @@ const Tutors = () => (
       </p>
       <div className="section-header">
         <div className="section-header__icon section-header__icon--tutors" style={{ backgroundImage: `url(${IconTutors})` }}/>
-        <h2 className="section-header__title">Автошкола</h2>
+        <h2 className="section-header__title">Наши инструкторы</h2>
       </div>
       <div className="grid grid--4">
         <div className="tutor">
